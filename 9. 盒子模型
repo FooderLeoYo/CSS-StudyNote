@@ -1,0 +1,12 @@
+<head>
+    <meta charset="UTF-8">
+    <title>创建盒子模型</title>
+    <style type="text/css">
+        .class1 {
+            border: 1px solid black; /*边框粗细、样式、颜色*/
+            background-color: antiquewhite;
+            padding: 100px 80px 50px 70px; /*内边距：内容到边框上、右、下、左边界的距离*/
+            margin: 100px 80px 50px 70px; /*内边距：边框到页面边界的距离*/
+        }
+    </style>
+</head>
