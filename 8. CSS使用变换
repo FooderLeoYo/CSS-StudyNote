@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        p {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+        }
+        p:hover {
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            transform: rotate(45deg); /*转动一个角度*/
+            transform: scale(1.5); /*缩放比例*/
+            transform: scaleX(2); /*只缩放x轴*/
+            transform-origin: top right; /*设置锚点*/
+            transform-origin: 20px 40px; /*设置具体位置的锚点：距离左边界距离，距离上边界及距离*/
+
+        }
+    </style>
+</head>
