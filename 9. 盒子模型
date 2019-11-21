@@ -1,0 +1,36 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .div {
+            text-align: center; /*水平居中*/
+        }
+        .img {
+            margin-top: 100px; /*设置距离页面上边界的距离*/
+            width: 300px;
+            height: 300px;
+        }
+        html:hover .img { /*加了html后，过渡结束时鼠标离开图片也不会回到初始图片，但离开页面会返回*/
+            transition-delay: 1s;
+            transition-duration: 2s;
+            width: 100px;
+            height: 100px;
+            margin-top: 0px;
+
+        }
+        p {
+            font-family: 微软雅黑;
+            font-size: 40px;
+            text-shadow: 1px 1px 2px black;
+            opacity: 1; /*不透明度*/
+        }
+        html:hover p {
+            transition-delay: 1s;
+            transition-duration: 2s;
+            font-family: 微软雅黑;
+            font-size: 10px;
+            text-shadow: 1px 1px 2px black;
+            opacity: 0;
+        }
+    </style>
+</head>
