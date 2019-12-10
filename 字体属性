@@ -14,7 +14,8 @@
 
 5. 字体复合属性：简写形式
 	选择器 {
-		font: font-style font-weight/line height font-family;
+		font: font-style font-weight font-size/line-height font-family;
 	}
 	5.1 不能颠倒顺序
 	5.2 可以省略部分属性，但必须保留font-size和font-family属性
+	5.3 line-height可以只写数字不带单位，表示line-height是font-size的多少倍
