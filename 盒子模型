@@ -1,0 +1,37 @@
+1. 盒子模型的组成
+	content：内容
+	padding：内边距（内容与边框的距离）
+	border：边框
+	margin：外边距（盒子与盒子间的距离）
+
+2. 边框
+	2.1 border-wideth
+		边框的粗细  一般情况下都用 px
+	2.2 boder-style
+		边框的样式  solid 实线边框   dashed 虚线边框  dotted 点线边框
+	2.3 border-color
+	2.4边框的复合写法
+		2.4.1 语法
+			border: 5px solid pink;
+			顺序可打乱，但一般按照这个顺序
+		2.4.2 边框分开复合写法
+			border-top: 5px solid pink;
+			下左右同理
+		2.4.3 利用层叠性
+            border: 1px solid blue;
+            border-top: 1px solid red;
+			得到的结果是除了上边框是红色其余三条边都是蓝色
+			这样写就比较简洁，不需要分别给三条边指定蓝色
+	2.5 表格的细线边框
+		表格的相邻单元格的边框挨在一起会变成粗成2倍，采用以下语句可使其变为1倍
+		border-collapse:collapse;
+	2.6 边框会影响盒子的实际大小
+
+3. 内边距
+	3.1 padding-left, padding-right, padding-top, padding-bottom
+	3.2 复合写法
+		    1个值：padding: 5px; /* 代表上下左右都是5px */
+            2个值：padding: 5px 10px; /* 代表上下边距是5px,左右边距是10px */
+            3个值：padding: 5px 10px 20px; /* 代表上边距是5px，左右边距是10px,下边距是20px */
+            4个值：padding: 5px 10px 20px 30px; /* 代表上5右10下20做30，顺时针 */
+	3.3 padding会影响盒子的实际大小
