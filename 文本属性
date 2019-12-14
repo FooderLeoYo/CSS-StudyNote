@@ -15,7 +15,7 @@
 		text-decoration:属性；
 	}
 	属性包括:
-	none:无
+	none:无（经常用于取消a标签的默认下划线）
 	underline:下划线
 	overline:上划线
 	line-through:中划线
@@ -30,3 +30,6 @@
 	标签 {
 		line-height:数字px;
 	}
+
+6. list-style: none; 
+    取消li前面的项目符号（小圆点）
