@@ -1,0 +1,20 @@
+1. 圆角边框
+	1.1 简写语法
+		border-radius: 数值px/百分比;
+		百分比是盒子宽度的百分比
+	1.2 完整写法
+		写一个值是简写，最多可以写4个值，分别控制左上角、右上角、右下角、左下角
+		写两个值：左上角右下角、右上角左下角
+	1.3 只改动一个角
+		border-top-left-radius:
+		border-top-right-radius:
+		border-bottom-left-radius:
+		border-bottom-right-radius:
+
+2. 盒子阴影
+	2.1 语法
+		box-shadow: h-shadow v-shadow blur pread color inset;
+		h-shadow v-shadow必需，允许负值
+
+3. 文字阴影（不重要）
+	text-shadow: h-shadwo v-shadow bur color;
