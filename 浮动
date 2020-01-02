@@ -49,7 +49,7 @@
 			相当于额外标签法升级版，利用CSS而不是HTML给父盒子尾部添加伪元素
 			语法：
 			CSS中添加样式：
-			.clearfix:after {
+			.clearfix:after { /* 添加伪元素一般是用双冒号，这里用单冒号是为了照顾兼容性 */
 				content: "";
 				display: block;
 				height: 0;
