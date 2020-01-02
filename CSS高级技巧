@@ -16,7 +16,7 @@
 	3.3 导入字体图标
 		1. 把下载包里面的fonts文件夹放入页面的根目录下
 		2. 在CSS样式中全局声明字体，声明所需代码在下载包里的style.css文件里，从开头复制到block处
-		3. 打开下载包里的demo.html，复制小框框到目标盒子中，再给盒子设置font-family为第二步声明中的font-family
+		3. 打开下载包里的demo.html，复制某个字体图标的小框框或代码+"\"到目标盒子中，再给盒子设置font-family为第二步声明中的font-family
 	3.4 追加字体图标
 		在Iconfont网站里点重新上传，选压缩包里的selection.json，里面记录了之前已选的图标
 
