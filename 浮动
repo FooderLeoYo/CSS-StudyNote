@@ -43,7 +43,7 @@
 			缺点：添加许多无意义的标签，结构化较差，实际工作中用得很少
 		6.3.2 给父级添加overflow属性
 			CSS中给父盒子添加overflow属性，并将其属性值设置为hidden, auto或scroll
-			sssss原理：当给元素添加overflow: hidden后，元素成为一个BFC（(Block formatting context)）元素；
+			原理：当给元素添加overflow: hidden后，元素成为一个BFC（(Block formatting context)）元素；
 			计算BFC的高度时，浮动元素也参与计算
 			优点：代码简洁
 			缺点：无法显示溢出的部分
