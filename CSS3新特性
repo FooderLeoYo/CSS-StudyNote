@@ -35,6 +35,7 @@ CSS3新特性
 					ol li:nth-child(n) {
 						background-color: pink;
 					}
+                                2. 小技巧：nth-child(-n+A)是选出前A个
 		1.2.2 E:nth-of-type(i)
 			指定类型E的第n个
 		1.2.3 E:nth-child和E:nth-of-type的区别
