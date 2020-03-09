@@ -67,18 +67,4 @@
 		hidden 隐藏超出部分
 		scroll 不管是否溢出，总是显示滚动条
 		auto 溢出时才会显示滚动条
-5. BFC(Block formatting context)
-	5.1 什么时候会生成BFC
-		根元素
-		float属性不为none
-		position为absolute或fixed
-		display为inline-block, table-cell, table-caption, flex, inline-flex
-		overflow不为visible
-	5.2 BFC具有的性质
-		内部的块元素会在垂直方向，一个接一个地放置。
-		块元素垂直方向的距离由margin决定。两个相邻块元素的垂直方向的margin会发生重叠。
-		每个元素的左外边距，与包含块的左边相接触(对于从左往右的格式化，否则相反)。即使存在浮动也是如此。
-		BFC的区域不会与float元素的区域重叠。
-		BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。反之也如此。
-		计算BFC的高度时，浮动元素也参与计算
-	5.3 由于BFC的这些性质，overflow: hidden具有清除浮动和清除外边距重叠的功能
+
