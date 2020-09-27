@@ -2,36 +2,33 @@
 
 ## 目录
 
-[grid-template-columns & grid-template-rows](#jump1)
+[grid-template-columns、grid-template-rows](#jump1)
 
 [repeat](#jump2)
 
-[auto-fill 关键字](#jump3)
+[auto-fill关键字](#jump3)
 
-[fr 关键字](#jump4)
+[fr关键字](#jump4)
 
 [gap](#jump5)
 
 [grid-auto-flow](#jump6)
 
-[justify-items & align-items](#jump7)
+[justify-items、align-items](#jump7)
 
-[justify-content & align-content](#jump8)
+[justify-content、align-content](#jump8)
 
-[](#jump9)
+[grid-column-start、grid-column-end、grid-row-start、grid-row-end](#jump9)
 
-[](#jump)
+[grid-area](#jump10)
 
-[](#jump)
-
-[](#jump)
-
+[justify-self、align-self](#jump11)
 
 ---	
 
 <span id="jump1"></span>
 
-## grid-template-columns & grid-template-rows
+## grid-template-columns、grid-template-rows
 
 ### 基本语法
 
@@ -207,7 +204,7 @@ grid-auto-flow属性除了设置成row和column，还可以设成row dense和col
 
 <span id="jump7"></span>
 
-## justify-items & align-items
+## justify-items、align-items
 
 ### 基本语法
 
@@ -241,7 +238,7 @@ place-items: <align-items> <justify-items>;
 
 <span id="jump8"></span>
 
-## justify-content & align-content
+## justify-content、align-content
 
 ### 基本语法
 
@@ -278,5 +275,96 @@ place-content: <align-content> <justify-content>
 
 <span id="jump9"></span>
 
-## 
+## grid-column-start、grid-column-end、grid-row-start、grid-row-end
 
+### 基本语法
+
+项目的位置是可以指定的，具体方法就是指定项目的四个边框，分别定位在哪根网格线
+
+```
+grid-column-start属性：左边框所在的垂直网格线
+grid-column-end属性：右边框所在的垂直网格线
+grid-row-start属性：上边框所在的水平网格线
+grid-row-end属性：下边框所在的水平网格线
+```
+
+```javascript
+.item-1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+```
+
+### span
+
+这四个属性的值还可以使用span关键字，表示"跨越"，即左右边框（上下边框）之间跨越多少个网格
+
+```javascript
+.item-1 {
+  grid-column-start: span 2;
+}
+```
+
+上面代码表示，1号项目的左边框距离右边框跨越2个网格
+
+这与下面的代码效果完全一样
+
+```javascript
+.item-1 {
+  grid-column-end: span 2;
+}
+```
+
+### grid-column、grid-row
+
+grid-column属性是grid-column-start和grid-column-end的合并简写形式，grid-row属性是grid-row-start属性和grid-row-end的合并简写形式
+
+```javascript
+.item {
+  grid-column: <start-line> / <end-line>;
+  grid-row: <start-line> / <end-line>;
+}
+```
+
+---
+
+<span id="jump10"></span>
+
+## grid-area
+
+grid-area属性指定项目放在哪一个区域
+
+```javascript
+.item-1 {
+  grid-area: e;
+}
+```
+
+---
+
+<span id="jump11"></span>
+
+## justify-self、align-self
+
+### 基本语法
+
+justify-self属性设置单元格内容的水平位置（左中右），跟justify-items属性的用法完全一致，但只作用于单个项目。
+
+align-self属性设置单元格内容的垂直位置（上中下），跟align-items属性的用法完全一致，也是只作用于单个项目
+
+```javascript
+.item {
+  justify-self: start | end | center | stretch;
+  align-self: start | end | center | stretch;
+}
+```
+
+### place-self
+
+place-self属性是align-self属性和justify-self属性的合并简写形式
+
+```javascript
+place-self: <align-self> <justify-self>;
+```
