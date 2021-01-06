@@ -22,7 +22,9 @@
 
 BFC(Block formatting context)直译为"块级格式化上下文"
 
-它是一个独立的渲染区域，只有 Block-level box 参与， 它规定了内部的 Block-level Box 如何布局，并且与这个区域外部毫不相干
+它是一个独立的渲染区域，只有 Block-level box 参与， 并且与这个区域外部毫不相干
+
+这个块会负责自己的布局，宽高由自己决定，比如一个 span 中用了 float，那么这个 span 就形成了一个 BFC，并可以设置宽高了
 
 ---
 
