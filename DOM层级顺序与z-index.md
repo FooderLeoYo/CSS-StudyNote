@@ -229,10 +229,10 @@ z-index属性仅对定位节点生效
 
 | 位置 | 描述 | CSS |
 | --- | --- | --- |
-| 1 | 包含该层叠上下文的父元素 |  |
+| 1（底部） | 包含该层叠上下文的父元素 |  |
 | 2 | 负堆叠顺序的子元素 | ```	z-index: <negative integer>; position: relative (or absolute or fixed)``` |
 | 3 | 文档流中，非内联，非定位子元素 | ```display: /* not inline */; position: static``` |
 | 4 | 非定位浮动子元素 | ```	float: left (or right); position: static``` |
 | 5 | 内联流，非定位子元素 | ```display: inline; position: static``` |
 | 6 | 堆叠顺序为0的子元素 | ```	z-index: auto (or 0); position: position: relative(or absolute or fixed)``` |
-| 7 | 堆叠顺序为正的子元素 | ```z-index: <positive integer>; position: relative(or absolute or fixed)``` |
+| 7（顶部） | 堆叠顺序为正的子元素 | ```z-index: <positive integer>; position: relative(or absolute or fixed)``` |
