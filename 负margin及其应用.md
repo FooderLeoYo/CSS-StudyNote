@@ -22,7 +22,7 @@
 
 参考线就是就是margin移动的基准点，而margin的值就是移动的数值
 
-参考线不发生移动，移动的是margin；移动的结果为margin的宽度变化（margin为正值时）或非参考元素发生位移（margin为负值时）
+参考线不发生移动，移动的是margin，移动的结果为margin的方向及宽度发生变化
 
 margin的参考线有两类：一类是top、left，它们以外元素作为参考线；另一类是right、bottom，它们以自身作为参考线
 
@@ -69,7 +69,7 @@ margin的参考线有两类：一类是top、left，它们以外元素作为参�
 
 ![margin-top为负](https://raw.githubusercontent.com/FooderLeoYo/CSS-StudyNote/master/assets/img/margin/margin-top%E4%B8%BA%E8%B4%9F.png)
 
-当设置div.two的margin-top为-50px的时候，它的参考线是div.one的下边。根据移动规则，这一设置使得div.two相对于参考线移动-50px，也即整个div.two向上移动50px
+当设置div.two的margin-top为-50px的时候，它的参考线是div.one的下边。根据移动规则，这一设置使得div.two的margin-top相对于参考线向上扩大50px，div.two相当于把div.one挖了一个坑，结果使得整个div.two向上移动50px
 
 ---
 
@@ -149,7 +149,7 @@ margin的参考线有两类：一类是top、left，它们以外元素作为参�
 
 ![margin-right为负](https://raw.githubusercontent.com/FooderLeoYo/CSS-StudyNote/master/assets/img/margin/margin-right%E4%B8%BA%E8%B4%9F.png)
 
-设置div.one的margin-right为-50px,这时候的参考线是div.one自身的右边界，因此div.one不动，div.two相对参考线移动-50px
+设置div.one的margin-right为-50px，这时候的参考线是div.one自身的右边界。根据规则，这一设置使得div.one的margin-right相对于参考线向左扩大50px，div.one相当于自己把自己挖了一个坑，结果使得div.two相对参考线移动-50px
 
 ---
 
