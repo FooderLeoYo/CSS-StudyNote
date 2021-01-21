@@ -12,9 +12,9 @@
 
 [圆角边框](#jump5)
 
-[](#jump)
+[盒子阴影](#jump6)
 
-[](#jump)
+[Emmet语法](#jump7)
 
 [](#jump)
 
@@ -184,3 +184,27 @@ box-shadow: h-shadow v-shadow blur pread color inset;
 ```
 
 h-shadow v-shadow必需，允许负值
+
+---
+
+<span id="jump6"></span>
+
+## Emmet语法
+
+使用Emmet语法，可以快速生成HTML结构语法
+
+常用的Emmet语法包括：
+
+- 标签名+tab：可生成一个标签
+
+- 标签名*数字：可以生成多个标签
+
+- 标签名.类名：生成带类的标签
+
+- 标签名#id名：生成带id的标签
+
+- >：生成父子关系的标签
+
+- $*数字：生成一组自增序列
+
+- 标签名{}：生成带内容的标签
